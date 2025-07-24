@@ -158,12 +158,11 @@ nav {
 /* <!-- flower lover section --> */
 
 .flower-lover-container {
-  flex: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 60px;
-  max-width: 100;
+
   margin-top: 200px;
 }
 
@@ -175,6 +174,13 @@ nav {
 
 .bage-container {
   position: relative;
+  width: 50%;
+}
+.bage-container .main-img {
+  width: 100%;
+}
+.flower-lover-text-container {
+  width: 50%;
 }
 .badge-img {
   position: absolute;
@@ -183,11 +189,9 @@ nav {
   width: 286px;
   height: 286px;
 
-  top: -30%;
-  right: -25%;
+  top: -12%;
+  right: -14%;
   border-radius: 100%;
-   
-  
 }
 
 .flower-lover-text {
@@ -207,6 +211,78 @@ nav {
 .flower-lover-text ul li {
   margin-top: 16px;
   margin-left: 15px;
+}
+
+/* ------------latest deal --------- */
+
+.latest-deal {
+  align-items: center;
+  margin-top: 100px;
+}
+
+/*------------------ <!-- collage img  ------------->----- */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  height: 100vh;
+  padding: 10px;
+}
+
+.box {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100%;
+}
+.box h2,
+h4 {
+  color: white;
+}
+
+.box1 {
+  background-image: url(../images/deal-ana.png);
+  grid-column: 1;
+  grid-row: 1;
+  align-items: center;
+  /* filter: brightness(50%); */
+  opacity: 1;
+}
+
+.box2 {
+  background-image: url(../images/deal-bloom.png);
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.box3 {
+  background-image: url(../images/deal-zabo.png);
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+
+.box > * {
+  position: relative;
+  z-index: 1;
+}
+.box div {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.464);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* media query for small device  */
@@ -272,20 +348,49 @@ nav {
     flex-direction: column;
     margin-top: -10px;
   }
-  
+
   .flower-lover-text {
     width: 90%;
   }
 
-  .badge-img{
+  .badge-img {
     display: none;
   }
-  
 
   .flower-lover-container h1 {
     font-size: 1.5rem;
   }
   .flower-lover-container ul {
     font-size: 0.875rem;
+  }
+
+  .bage-container {
+    width: 90%;
+  }
+  .flower-lover-text-container {
+    width: 90%;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+  }
+  .box{
+    height: 150px;
+  }
+  .box h2  {
+    font-size: 22px;
+  }
+   .box a {
+    font-size: 16px;
+    margin-top: 8px;
+  }
+
+  .box1,
+  .box2,
+  .box3 {
+    grid-column: 1 !important;
+    grid-row: auto !important;
   }
 }
