@@ -84,8 +84,6 @@ nav {
   flex-wrap: wrap;
 }
 
-
-
 /* ------------plants section  -----------*/
 
 .plants {
@@ -109,43 +107,32 @@ nav {
   margin: 0 auto;
 }
 
-
-
 /* ----------plants cards section ---------------*/
-
 
 .plants-section {
   padding: 50px 0;
-
-   
 }
 .plants-card-container {
- flex:1;
+  flex: 1;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   justify-content: center;
- 
- 
-
-  
 }
 .plant-card {
   background-color: white;
   text-align: center;
   box-shadow: 1px 0px 8px 0px rgb(0 0 0 / 15%);
   align-items: center;
-
 }
-.plant-card img{
+.plant-card img {
   width: 100%;
-
 }
 
 .plant-card h2 {
   display: block;
   font-weight: 500;
-  text-align:center;
+  text-align: center;
   font-size: 22px;
   margin: 20px 0px;
   color: #111111;
@@ -166,6 +153,60 @@ nav {
   padding: 20px 50px;
   text-align: center;
   cursor: pointer;
+}
+
+/* <!-- flower lover section --> */
+
+.flower-lover-container {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  max-width: 100;
+  margin-top: 200px;
+}
+
+.flower-lover-container img {
+  max-width: 100%;
+  height: auto;
+  flex: 1;
+}
+
+.bage-container {
+  position: relative;
+}
+.badge-img {
+  position: absolute;
+  /* trusted-badge 1 */
+  position: absolute;
+  width: 286px;
+  height: 286px;
+
+  top: -30%;
+  right: -25%;
+  border-radius: 100%;
+   
+  
+}
+
+.flower-lover-text {
+  align-items: center;
+  max-width: 100%;
+}
+.flower-lover-text h1 {
+  font-weight: 700;
+  font-size: 3.125rem;
+  white-space: nowrap;
+}
+
+.flower-lover-text ul {
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+.flower-lover-text ul li {
+  margin-top: 16px;
+  margin-left: 15px;
 }
 
 /* media query for small device  */
@@ -217,12 +258,34 @@ nav {
     font-size: 0.87rem;
   }
 
-    /*------------ plants cards ----------*/
+  /*------------ plants cards ----------*/
   .plants-card-container {
     grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets/phones */
   }
 
   .item-btn {
     padding: 15px 20px; /* smaller padding for smaller screens */
+  }
+
+  /* flower lover  */
+  .flower-lover-container {
+    flex-direction: column;
+    margin-top: -10px;
+  }
+  
+  .flower-lover-text {
+    width: 90%;
+  }
+
+  .badge-img{
+    display: none;
+  }
+  
+
+  .flower-lover-container h1 {
+    font-size: 1.5rem;
+  }
+  .flower-lover-container ul {
+    font-size: 0.875rem;
   }
 }
