@@ -5,15 +5,22 @@
   font-family: "Noto Sans", sans-serif;
 }
 
-
 /* shared section  */
+
+.text-primary-color {
+  color: #e95a08;
+}
+.text-secondary-color {
+  color: #8987a1;
+}
+.primary-color {
+  color: #e95a08;
+}
 header {
   max-width: 90vw;
   margin: 0 auto;
   background-color: rgb(255, 255, 255);
 }
-
-
 
 /* nav section */
 nav {
@@ -21,7 +28,7 @@ nav {
   padding: 20px 0;
 }
 
-.navcontainer{
+.navcontainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,33 +59,61 @@ nav {
   display: flex;
   gap: 10px;
   align-items: center;
-  
 }
 .nav-icon h6 {
-font-size: 1rem;
-font-weight: 500;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* banner design */
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+ 
+}
+.banner-title {
+  font-size: 4.1rem;
+}
+
+.banner-description {
+  width: 410px;
+  margin: 16px 0;
+  flex-wrap: wrap;
 }
 
 /* media query for small device  */
 
-@media (max-width:768px) {
-    .nav-item-container ul {
-  display: none;
+@media (max-width: 768px) {
+  .nav-item-container ul {
+    display: none;
+  }
+
+  .navcontainer img {
+    height: 40px;
+  }
+
+
+
+  /* banner  */
+  .banner{
+    flex-direction: column-reverse;
+    min-width:95vw;
+    padding: 90px;
+     margin-top:-90px;
+  }
+
+  .banner img{
+    width: 95vw;
+  }
+  .banner-title {
+   font-size: 1.5rem;
+   margin-top: 30px;
+  }
+  .banner-description {
+  width:95vw;
   
 }
-
-
-.navcontainer img{
-   
-    height: 40px;
-
 }
-
-
-
-
-   
-    
-}
-
-
