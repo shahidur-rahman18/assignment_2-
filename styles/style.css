@@ -17,7 +17,7 @@
   color: #e95a08;
 }
 header,
-main {
+.main {
   max-width: 90vw;
   margin: 0 auto;
   background-color: rgb(255, 255, 255);
@@ -229,6 +229,7 @@ nav {
   gap: 10px;
   height: 100vh;
   padding: 10px;
+  margin-top: 40px;
 }
 
 .box {
@@ -244,6 +245,9 @@ nav {
   position: relative;
   height: 100%;
 }
+div{
+  border-radius: 10px;
+}
 .box h2,
 h4 {
   color: white;
@@ -254,8 +258,7 @@ h4 {
   grid-column: 1;
   grid-row: 1;
   align-items: center;
-  /* filter: brightness(50%); */
-  opacity: 1;
+  
 }
 
 .box2 {
@@ -285,6 +288,85 @@ h4 {
   align-items: center;
 }
 
+
+/* join section -------------------- */
+
+
+.join-box {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100%;
+}
+  .join-container {
+  background-image: url('../images/news-letter-bg.png'); /* Change to your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 0; /* Optional: add padding for spacing */
+  height: 100%;
+}
+
+.subscribe{
+  background-image: url('../images/news-letter-bg.png'); /* Change to your image path */
+  background-size: cover;
+  height: 533px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe .title{
+  color: white ;
+  text-align: center;
+  text-transform: capitalize;
+}
+.title{
+  font-weight: 700px;
+  font-size: 3rem;
+}
+
+.input {
+  display: flex;
+  width: 100%;
+  min-width: 600px;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  margin-top: 20px;
+}
+
+.input input[type="text"] {
+  flex: 1;
+  padding: 16px 16px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 0;
+}
+
+.input button {
+  background: #e95a08;
+  color: #fff;
+  border: none;
+  padding: 0 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 0;
+  transition: background 0.2s;
+}
+
+.input button:hover {
+  background: #c94a06;
+}
 /* media query for small device  */
 
 @media (max-width: 768px) {
@@ -374,6 +456,8 @@ h4 {
   .grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px; /* Remove gap between boxes */
+    height: auto;
     
   }
   .box{
@@ -393,4 +477,6 @@ h4 {
     grid-column: 1 !important;
     grid-row: auto !important;
   }
+  
+
 }
