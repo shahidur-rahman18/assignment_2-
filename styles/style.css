@@ -16,7 +16,7 @@
 .primary-color {
   color: #e95a08;
 }
-header {
+header, main {
   max-width: 90vw;
   margin: 0 auto;
   background-color: rgb(255, 255, 255);
@@ -84,9 +84,41 @@ nav {
   flex-wrap: wrap;
 }
 
+  /* plants section  */
+ .plants{ 
+ align-items: center;
+  margin-top: 100px;
+  
+ 
+
+ }
+
+ .plants-title{
+    font-size: 3.25rem;
+    text-align: center;
+    font-weight: 700;
+    max-width: 800px; 
+    margin: 0 auto;
+    
+ }
+
+ .plants-description{
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+     line-height: 1.6; 
+     width: 50vw;
+     margin: 0 auto;
+    
+    
+ }
+
+
 /* media query for small device  */
 
 @media (max-width: 768px) {
+
+    /* nav */
   .nav-item-container ul {
     display: none;
   }
@@ -101,6 +133,7 @@ nav {
   .banner{
     flex-direction: column-reverse;
     min-width:95vw;
+    margin: 0 auto;
     padding: 90px;
      margin-top:-90px;
   }
@@ -114,6 +147,30 @@ nav {
   }
   .banner-description {
   width:95vw;
-  
+ font-size:0.87rem;
+ 
+ 
 }
+
+    /* plants */
+    .plants{
+        flex-direction: column;
+        margin-top:-65px;
+    }
+   .plants-title{
+    font-size: 1.4rem;
+    text-align: center;
+     margin-top: px;
+   
+    
+ }
+
+ .plants-description{
+   width:90vw;
+  font-size: 0.87rem;
+    
+ }
+
+   
+
 }
