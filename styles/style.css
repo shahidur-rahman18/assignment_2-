@@ -171,6 +171,15 @@ nav {
   height: auto;
   flex: 1;
 }
+  
+@keyframes rotate-badge {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 .bage-container {
   position: relative;
@@ -184,14 +193,13 @@ nav {
 }
 .badge-img {
   position: absolute;
-  /* trusted-badge 1 */
-  position: absolute;
   width: 286px;
   height: 286px;
-
   top: -12%;
   right: -14%;
   border-radius: 100%;
+   animation: rotate-badge 6s linear infinite;
+
 }
 
 .flower-lover-text {
@@ -201,7 +209,7 @@ nav {
 .flower-lover-text h1 {
   font-weight: 700;
   font-size: 3.125rem;
-  white-space: nowrap;
+ 
 }
 
 .flower-lover-text ul {
@@ -291,29 +299,8 @@ h4 {
 
 /* join section -------------------- */
 
-
-.join-box {
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  height: 100%;
-}
-  .join-container {
-  background-image: url('../images/news-letter-bg.png'); /* Change to your image path */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 60px 0; /* Optional: add padding for spacing */
-  height: 100%;
-}
-
 .subscribe{
+  margin-top: 50px;
   background-image: url('../images/news-letter-bg.png'); /* Change to your image path */
   background-size: cover;
   height: 533px;
