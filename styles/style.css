@@ -384,7 +384,7 @@ footer {
 }
 
 .footer-container {
- 
+  
   display: flex;
   gap: 50px;
   padding: 50px 50px;
@@ -549,7 +549,9 @@ footer {
     padding: 15px 20px; /* smaller padding for smaller screens */
   }
 
-  /* flower lover  */
+  /* -----------------flower lover  */
+
+
   .flower-lover-container {
     flex-direction: column;
     margin-top: -10px;
@@ -580,7 +582,7 @@ footer {
   .grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 10px; /* Remove gap between boxes */
+    gap: 10px; 
     height: auto;
     
   }
@@ -624,7 +626,7 @@ footer {
   .input {
     
  
-    min-width: 50vw;
+    min-width: 0vw;
     margin: 0 auto;
     
  
@@ -632,7 +634,8 @@ footer {
 }
 
 .input button{
-  font-size: .8rem
+  font-size: .8rem;
+   padding: 0 16px;
 }
 
 .input input[type="text"] {
@@ -641,20 +644,28 @@ footer {
     border: none;
     outline: none;
     font-size: .8rem;
-    border-radius: 0;
+    
 }
 
 
 /* ---------footer section----------  */
+
+
 .footer-container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 30px;
-        padding: 30px 10px;
-    }
-
-
-
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 30px 10px;
+  }
+  .footer-nav {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .footer-icons {
+    margin-left: 0;
+    justify-content: flex-start;
+  }
 
 
 
